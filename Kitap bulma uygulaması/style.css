@@ -1,0 +1,198 @@
+* {
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(wallhaven-4yz55d.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    /* margin:0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(233, 203, 173);
+}
+.colum{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(221, 174, 123, 0); */
+    /* border: 1px solid rgb(228, 153, 49); */
+}
+
+.inpBook {
+    
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgb(250, 235, 215);
+    margin:-40px 0 30px; 
+    text-align: center;
+    outline: none;
+
+}
+.inpBook:focus{
+box-shadow: inset 2px 2px 20px rgb(225, 158, 91);
+}
+.inpBook:hover{
+    cursor:text;
+}
+
+.btnFoundBook {
+    height: 45px;
+    width: 150px;
+    margin: 10px 0 -20px;
+    color: rgb(3, 3, 3);
+    border-radius:10px;
+    border-style: none;
+    background-color: rgb(149, 157, 163);
+    font-size: 15px;
+    font-weight: 540;
+}
+.btnFoundBook:not(:disabled):hover{
+    box-sizing: content-box;
+    box-shadow: 0 15px 18px rgba(65, 56, 56, 0.6);
+}
+.btnFoundBook:not(:disabled):active{
+background-color: rgb(75, 75, 110);
+color: #fff;
+}
+
+.btnFoundBook[disabled] {
+    background-color: rgb(190, 190, 190);
+    
+}
+
+/* #result{
+    color: #ff0000;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex; 
+    justify-content: center;
+    margin-top:-15px ;
+
+} */
+
+
+
+#result {
+    background-color: rgba(0, 0, 0, 0.7);  /* Arka planı şeffaf yapıyoruz, 0.7 opaklık */
+    color: white;  /* Yazı rengini beyaz yapıyoruz */
+    padding: 20px;  /* Padding ile metnin etrafına boşluk ekliyoruz */
+    border-radius: 8px;  /* Kenarlarını yuvarlaklaştırıyoruz */
+    margin-top: 20px;  /* Üstten biraz boşluk bırakıyoruz */
+    font-family: Arial, sans-serif;  /* Yazı tipini belirliyoruz */
+}
+
+#result p {
+    margin: 10px 0;  /* Her bir kitap bilgisi arasında boşluk */
+    font-size: 16px;  /* Yazı boyutunu belirliyoruz */
+}
+
+#result strong {
+    color: #FFD700;  /* Kitap adlarını altın renginde yapalım */
+    font-size: 18px;  /* Kitap adını biraz daha büyük yapıyoruz */
+}
+
+/* Bilgi verirken kitap adının altındaki detayları netleştirelim */
+#result span {
+    font-size: 14px;  /* Detayların yazı boyutunu küçültüyoruz */
+    color: #dcdcdc;  /* Detayları biraz daha açık gri yapıyoruz */
+}
+
+
+.btnClear {
+    height: 40px;
+    width: 120px;
+    margin: 10px 0;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btnClear:hover {
+    background-color: #c0392b;
+}
+
+
+
+/*------------------------------------------------------------ 
+ */
+
+/* .showShelF{
+    height: 600px;
+
+    background-color:blue;
+ } */
+
+
+
+/* ----------------------------------------------------------------
+
+         KİTAP RAFLARI  
+*/
+
+
+
+.shelf-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.shelf-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.shelf-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.book-slot {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 22%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.book-slot.found {
+    background: rgba(255, 215, 0, 0.8);
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+.genre-label {
+    font-size: 12px;
+    color: rgba(255, 215, 0, 0.8);
+}

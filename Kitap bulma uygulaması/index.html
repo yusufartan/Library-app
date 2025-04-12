@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Bulma Uygulaması</title>
+    <link rel="Website icon" type="png" href="bookshelf.png">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <h1>Kütüphaneye Hoşgeldiniz</h1>
+    <div class="container">
+        <div class="colum">
+            <input class="inpBook" type="text" id="inpSearch" placeholder="Arama istediğini kitabı giriniz" required>
+            <div id="result"></div>
+        </div>
+        <div class="buttton">
+            <button class="btnFoundBook" id="findBookButton" disabled>Kitabı Bul</button>
+            <button class="btnClear" id="clearResultButton">Temizle</button>
+        </div>
+    </div>
+    <div class="showShelF">
+        <section class="shelf-container">
+            <div class="shelf-title">ROMAN</div>
+            <div class="shelf-row" id="romance-shelf">
+                <!-- Burada kitaplar sırasıyla gelecek -->
+            </div>
+        </section>
+        
+        <section class="shelf-container">
+            <div class="shelf-title">MASAL</div>
+            <div class="shelf-row" id="fairy-tale-shelf">
+                <!-- Masal kitapları sırasıyla burada -->
+            </div>
+        </section>
+    </div>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
